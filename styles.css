@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121412 ;
+    border-bottom: 1px solid #b0b59b17;
+    padding: 13px 70px;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+
+.nav-link{
+    text-decoration: none;
+    color: #b0b59b;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+.nav-link:hover{
+    color: #cbcfbb;
+    transition: all 0.3s ease;
+}
+
+main{
+    padding: 30px;
+    background-color: #121412;
+    color: #b0b59b;
+    min-height: 80dvh;
+}
+
+a h1{
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.logo{
+    text-decoration: none;
+}
+
+.nav--active{
+    border-bottom: 2px solid #cbcfbb;
+    color: #cbcfbb;
+}
+
+.hire{
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 17px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+
+.contenedor {
+  position: relative;
+  min-height: 70vh; /* para que ocupe toda la altura de la pantalla */
+  display: flex;            /* convierte el contenedor en flex */
+  align-items: center;      /* centra verticalmente el contenido */
+  justify-content: center;  /* centra horizontalmente el contenido */
+}
+
+.texto-fondo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;  /* queda atrás */
+}
+
+.contenido-encima {
+  position: relative; /* necesario para que z-index funcione */
+  z-index: 1;  /* queda adelante */
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  display: flex;
+  justify-content: center;  /* acerca los dos bloques al centro */
+  align-items: center;
+  gap: 220px;                /* separacion entre texto e imagen */
+  padding: 30px 100px;
+}
+
+.texto-fondo {
+  transform: translate(-50%, -50%);
+  font-size: 21rem;
+  color: rgba(255, 255, 255, 0.05); /* casi transparente */
+  white-space: nowrap; /* evita que se parta en dos líneas */
+  font-family: 'Anton', sans-serif;
+  pointer-events: none; /* el mouse lo ignora completamente */
+}
+
+.texto-principal {
+  max-width: 600px; /* limita el ancho para que el parrafo no quede tan largo */
+}
+
+.texto-principal h2 {
+  font-family: 'Anton', sans-serif;   /* tipografia Anton */
+  font-size: 6.5rem;                    /* mas grande para que resalte */
+  color: #ffffff;                     /* blanco para que destaque */
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-top: -50px;                  /* sube un poco el titulo */
+  margin-bottom: 15px;
+}
+
+.texto-principal p {
+  font-family: 'Hanken Grotesk', sans-serif;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.parrafo-fila {
+  display: flex;          /* pone el parrafo y el boton en fila */
+  align-items: center;
+  gap: 20px;
+}
+
+.get {
+  background: none;                     /* sin fondo */
+  border: none;                         /* quita todos los bordes */
+  border-bottom: 2px solid #4caf50;     /* solo borde abajo, verde */
+  color: #4caf50;                       /* texto verde */
+  font-weight: bold;
+  padding: 6px 2px;
+  cursor: pointer;
+  white-space: nowrap;                  /* evita que el texto se parta */
+  font-family: 'Hanken Grotesk', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.get:hover {
+  color: #66bb6a;
+  border-bottom-color: #66bb6a;
+}
+
+.flecha {
+  font-size: 1.1rem; /* la flechita del boton */
+}
+
+.destacado {
+  color: #ffffff;          /* HERO DIGITAL en blanco */
+  text-transform: uppercase; /* en mayusculas */
+  font-weight: bold;
+}
+
+.imagen img {
+  width: 380px;             /* mismo ancho y alto = circulo */
+  height: 380px;
+  object-fit: cover;        /* recorta la imagen sin deformarla */
+  border-radius: 50%;       /* forma circular */
+  border: 10px solid #1e201e; /* contorno */
+  display: block;
+}
